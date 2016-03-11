@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GCD.js Example page</title>
+	<script type="text/javascript" src="gcd.js"></script>
+	<style>
+		* {
+			font-family: helvetica;
+		}
+		body {
+			width: 40%;	
+			text-align: center;
+		}
+		input {
+			height: 20px;
+			width: 100px;
+			background-color: rgba(164, 189, 218, 0.5);
+			border-color: #667FDA;
+			font-size: 14px;
+			padding: 2px 5px;
+		}
+		input:active {
+			background-color: white;
+		}
+		#answerField {
+			width: 230px;
+			text-align: center;	
+			margin: 30px auto;
+			background-color: rgba(170, 218, 184, 0.4);	
+		}
+	</style>
+</head>
+<body onload="main()">
+	
+	<h1>Euclidean Algorithm</h1>
+	<h3>Enter two numbers in the fields below to find the Greatest Common Denominator between these two numbers</h3>
+	<p>This calculation is performed using the Euclidean algorithm created by the Greek mathematician Euclid c. 300BC. <br /> <img src="http://www.alcula.com/php_dir/latexrender/pictures/d5b620d30c8b3d9acb8f7d91b2f25433.png"> </p>
+	
+	<input type="text" value="" name="n1" id="n1Field" placeholder="Number 1">
+	<input type="text" value="" name="n2" id="n2Field" placeholder="Number 2">
+	<h2 class="answer" id="answerField">0</h2>
+
+	<script type="text/javascript" src="helperFunctions.js"></script>
+</body>
+</html>
